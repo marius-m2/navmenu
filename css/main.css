@@ -1,131 +1,24 @@
-/* General stuff */
+/* ==========================================================================
+   General stuff
+   ========================================================================== */
 
-body, ul{
+body, ul {
   margin:0;
   padding:0;
 }
-ul{
+
+ul {
   list-style-type:none;
 }
-a{
+
+a {
   color:gray;
   display:block;
   text-decoration: none;
 }
-.container{
+
+.container {
   margin:0px auto;
   width:1265px;
 
-}
-
-/* End general stuff */
-
-/* Header */
-header{
-  padding:10px;
-}
-.nav-menu{
-  background-color:#6495ed;
-  border-radius: 10px;
-  font-size:0px;
-  text-align: center
-}
- /*first li level*/
-.nav-menu > li{
-  border-right:1px solid #cecece;
-  box-sizing: border-box;
-  display:inline-block;
-  width:20%;
-  position:relative;
-}
-
-.nav-menu li:last-child{
-  border-right:none;
-}
-
-.nav-menu li:hover{
-  background-color:gray;
-}
-
-.nav-menu li a, .nav-menu li ul li a{
-  color:#fff;
-  font-size: 16px;
-  font-family: sans-serif, serif;
-  padding:10px;
-}
-
-.nav-menu > li:hover ul{
-  display:block;
-}
-
-.nav-menu > li:first-child:hover{
-    border-radius: 10px 0px 0px 0px;
-}
-
-.nav-menu > li:last-child:hover{
-    border-radius: 0px 10px 0px 0px;
-}
-
-/*second ul level*/
-.nav-menu li ul{
-  background-color: cornflowerblue;
-  display:none;
-  position:absolute;
-  width: 100%;
-
-}
-.nav-menu li ul li{
-  border-bottom:1px solid #cecece;
-}
-
-/*hamburger */
-
-/* END header */
-
-/*Media queries*/
-
-
-@media screen and (max-width:1265px){
-  .container{
-    width:100%;
-  }
-}
-/*iphone 5*/
-@media only screen and (max-width:320px){
-  nav{
-    background: url('../img/hamburger.png') no-repeat;
-    height: 200px;
-    width: 50px;
-    top: 15px;
-    left: 20px;
-    display: block;
-  }
-  .nav-menu{
-    display:none;
-  }
-  nav:hover .nav-menu{
-    display: block;
-    position: absolute;
-    margin-top: 50px;
-    width: 50%;
-  }
-  .nav-menu li ul{
-    background-color: cornflowerblue;
-    width: 100%;
-    padding-lefT: 100px;
-    border-radius: 10px;
-    position: relative;
-    border: 1px solid #cecece;
-  }
-  .nav-menu > li{
-    border-right: none;
-    display: block;
-    width: 100%;
-  }
-  .nav-menu li ul li {
-    border-bottom:none;
-  }
-  .nav-menu li:hover{
-    border-radius:10px;
-  }
 }

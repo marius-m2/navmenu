@@ -1,0 +1,59 @@
+/* ==========================================================================
+   Media queries
+   ========================================================================== */
+
+@media screen and (max-width:1265px) {
+  .container {
+    width:100%;
+  }
+}
+
+/* ==========================================================================
+   iphone 5 specific
+   ========================================================================== */
+
+@media only screen and (max-width:320px) {
+  
+  nav {
+    background: url('../img/hamburger.png') no-repeat;
+    height: 200px;
+    width: 50px;
+    top: 15px;
+    left: 20px;
+    display: block;
+  }
+  
+  .nav-menu {
+    display:none;
+  }
+  
+  nav:hover .nav-menu {
+    display: block;
+    position: absolute;
+    margin-top: 50px;
+    width: 50%;
+  }
+  
+  .nav-menu li ul {
+    background-color: cornflowerblue;
+    border: 1px solid #cecece;
+    border-radius: 10px;
+    padding-left: 100px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .nav-menu > li {
+    border-right: none;
+    display: block;
+    width: 100%;
+  }
+  
+  .nav-menu li ul li {
+    border-bottom:none;
+  }
+  
+  .nav-menu li:hover {
+    border-radius:10px;
+  }
+}
